@@ -2,18 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <section class="container">
-
-
         <div class="grande">
             <div class="left">
                 <img class="choose1" src="oip.jpg" alt="" />
@@ -36,15 +32,22 @@
 
                     <p class="ple">Please fill with your details</p>
                 </div>
-                
-                
-                <form action="" method="" id="inscription">
+
+                <form action="" method="">
                     <div class="form">
                         <div class="form1">
-                            <input type="text" placeholder="First Name" class="form-control" id="firstname" />
-                            <input type="" placeholder="Your Email" class="form-control" id="email"/>
-                            <input type="age" placeholder="Age" class="form-control" id="age"/>
-
+                            <div>
+                                <input type="text" placeholder="First Name" class="form-control" id="firstname" />
+                                <p class="danger"></p>
+                            </div>
+                            <div>
+                                <input type="" placeholder="Your Email" class="form-control" id="email" />
+                                <p class="erreur2"></p>
+                            </div>
+                            <div>
+                                <input type="age" placeholder="Age" class="form-control" id="age" />
+                                <p class="erreur4"></p>
+                            </div>
 
                             <select type="country" name="country" placeholder="Your country" id="country">
                                 <option value="United Stade">United Stade</option>
@@ -54,39 +57,33 @@
                         </div>
 
                         <div class="form2">
-                            <input type="text" placeholder="Last Name" class="form-control" id="lastname"/>
-                            <input type="" placeholder="Phone number" class="form-control" id="number"/>
-                            <div class="label">
+                            <div>
+                                <input type="text" placeholder="Last Name" class="form-control" id="lastname" />
+                                <p class="erreur1"></p>
+                            </div>
 
+                            <div>
+                                <input type="" placeholder="Phone number" class="form-control" id="number" />
+                                <p class="erreur3"></p>
+                            </div>
+                            <div class="label">
                                 <div class="mal">
-                                    <input type="radio" name="genre" value="Mal" id="mal">
+                                    <input type="radio" name="genre" value="Mal" id="mal" />
                                     <label for="">Mal</label>
                                 </div>
                                 <div class="femele">
-                                    <input type="radio" name="genre" value="Femal" id="femele">
+                                    <input type="radio" name="genre" value="Femal" id="femele" />
                                     <label for="">Femal</label>
                                 </div>
-
                             </div>
                         </div>
-
-
                     </div>
-                    <input  class="bt1"  type="submit" value="Inscription">
-                   <p style="color: red;" id="erreur"></p>
+                    <input class="bt1" type="submit" value="Inscription" id="Inscription" />
+                    <!-- <p style="color: red;" id="erreur"></p> -->
                 </form>
             </div>
         </div>
-
     </section>
-
-
-
-
-
-
-
-
 
     <script src="index.js"></script>
 </body>
